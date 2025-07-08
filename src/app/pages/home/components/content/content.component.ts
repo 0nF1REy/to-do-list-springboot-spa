@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
-import { TaskService } from '../../services/task.service';
-import { Task } from '../../models/task.model';
+import { TaskService } from '../../../../services/task.service';
+import { Task } from '../../../../models/task.model';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -13,8 +13,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'task-list',
-  standalone: true,
+  selector: 'content',
   imports: [
     CommonModule,
     FormsModule,
@@ -27,10 +26,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatCheckboxModule,
     MatIconModule,
   ],
-  templateUrl: './task-list.component.html',
-  styleUrls: ['./task-list.component.css'],
+  templateUrl: './content.component.html',
+  styleUrl: './content.component.css',
 })
-export class TaskListComponent implements OnInit {
+export class ContentComponent implements OnInit {
   tasks: Task[] = [];
   newTask: Omit<Task, 'id' | 'realizado'> = {
     nome: '',
