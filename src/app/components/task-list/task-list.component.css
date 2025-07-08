@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:wght@700&display=swap");
+
+:host {
+  --font-primary: "Cormorant Garamond", serif;
+  --font-headings: "Playfair Display", serif;
+  --color-text: #4a403a;
+  --color-text-light: #8c7d71;
+  --color-background: #fefcf7;
+  --color-surface: #ffffff;
+  --color-border: #e0d8c8;
+  --color-primary: #5a7d7c;
+  --color-primary-hover: #4a6766;
+  --color-priority-high: #c75646;
+  --color-priority-medium: #e09d3b;
+  --color-priority-low: #7ca58a;
+  --border-radius: 8px;
+  --box-shadow-main: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --box-shadow-light: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+mat-card-title {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.vintage-title {
+  font-family: var(--font-headings);
+  text-align: center;
+  color: var(--color-text);
+  margin: 2rem auto;
+  font-size: 2.5em;
+}
+
+.vintage-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-vintage {
+  background-color: var(--color-background);
+  max-width: 450px;
+  flex: 1 1 350px;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-main);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+}
+
+.card-vintage {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.form-vintage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vintage-input .mat-form-field-flex {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 4px !important;
+}
+
+.vintage-input .mat-form-field-underline {
+  display: none;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.btn-vintage {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-vintage:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-cancel-vintage {
+  color: var(--color-text-light);
+  border-color: var(--color-border);
+}
+
+.list-vintage {
+  padding: 0;
+  margin: 0;
+}
+
+.item-vintage {
+  background-color: var(--color-surface);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  box-shadow: var(--box-shadow-light);
+  border: 1px solid var(--color-border);
+  padding: 12px 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.item-vintage:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.item-vintage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+}
+
+.item-vintage.priority-1::before {
+  background-color: var(--color-priority-high);
+}
+.item-vintage.priority-2::before {
+  background-color: var(--color-priority-medium);
+}
+.item-vintage.priority-3::before {
+  background-color: var(--color-priority-low);
+}
+
+.task-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.task-name {
+  font-weight: 700;
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-desc {
+  color: var(--color-text-light);
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-name.completed {
+  text-decoration: line-through;
+  color: var(--color-text-light);
+  font-weight: normal;
+}
+
+.btn-edit-vintage:hover {
+  color: var(--color-primary);
+}
+.btn-delete-vintage:hover {
+  color: var(--color-priority-high);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--color-text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.empty-state-text {
+  font-size: 1.2em;
+  color: var(--color-text);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .vintage-title {
+    font-size: 2em;
+  }
+
+  .vintage-grid {
+    gap: 1.5rem;
+  }
+
+  .container-vintage {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+}
