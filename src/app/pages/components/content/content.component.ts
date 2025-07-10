@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
-import { TaskService } from '../../../../services/task.service';
-import { Task } from '../../../../models/task.model';
+import { TaskService } from '../../../services/task.service';
+import { Task } from '../../../models/task.model';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';

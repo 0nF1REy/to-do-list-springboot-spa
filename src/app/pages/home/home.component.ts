@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ContentComponent } from './components/content/content.component';
-
+import { ContentComponent } from '../components/content/content.component';
 @Component({
   selector: 'home',
   imports: [ContentComponent],
