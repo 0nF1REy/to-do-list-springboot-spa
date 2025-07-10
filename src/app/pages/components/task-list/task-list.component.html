@@ -1,0 +1,59 @@
+<div class="container-vintage">
+  <div *ngIf="tasks && tasks.length > 0; else emptyTasks">
+    <mat-list class="list-vintage">
+      <mat-list-item
+        *ngFor="let task of tasks"
+        class="item-vintage"
+        [ngClass]="'priority-' + task.prioridade"
+      >
+        <mat-checkbox
+          matListItemIcon
+          [checked]="task.realizado"
+          (change)="toggleTaskStatus(task)"
+          class="checkbox-vintage"
+          [attr.aria-label]="
+            (task.realizado
+              ? 'Marcar como não concluída: '
+              : 'Marcar como concluída: ') + task.nome
+          "
+        ></mat-checkbox>
+
+        <div class="task-details">
+          <span [ngClass]="{ completed: task.realizado }" class="task-name">
+            {{ task.nome }}
+          </span>
+          <small class="task-desc">{{ task.descricao }}</small>
+        </div>
+
+        <button
+          mat-icon-button
+          matListItemMeta
+          (click)="editTask(task)"
+          class="btn-edit-vintage"
+          [attr.aria-label]="'Editar tarefa: ' + task.nome"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+
+        <button
+          mat-icon-button
+          matListItemMeta
+          color="warn"
+          (click)="deleteTask(task.id)"
+          class="btn-delete-vintage"
+          [attr.aria-label]="'Remover tarefa: ' + task.nome"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+  <ng-template #emptyTasks>
+    <div class="empty-state">
+      <mat-icon class="empty-state-icon">check_box_outline_blank</mat-icon>
+      <p class="empty-state-text">Nenhuma tarefa encontrada.</p>
+      <small>Adicione sua primeira tarefa no formulário ao lado!</small>
+    </div>
+  </ng-template>
+</div>

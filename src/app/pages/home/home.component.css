@@ -1,0 +1,24 @@
+.vintage-title {
+  font-family: var(--font-headings);
+  text-align: center;
+  color: var(--color-text);
+  margin: 2rem auto;
+  font-size: 2.5em;
+}
+
+.vintage-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .vintage-title {
+    font-size: 2em;
+  }
+
+  .vintage-grid {
+    gap: 1.5rem;
+  }
+}

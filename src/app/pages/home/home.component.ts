@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
-import { ContentComponent } from '../components/content/content.component';
+
+import { TaskListComponent } from '../components/task-list/task-list.component';
+
+import { TaskFormComponent } from '../components/task-form/task-form.component';
+
 @Component({
   selector: 'home',
-  imports: [ContentComponent],
+  imports: [TaskListComponent, TaskFormComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
