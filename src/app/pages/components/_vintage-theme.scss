@@ -22,7 +22,7 @@ mat-card-title {
 
 .container-vintage {
   background-color: #fefcf7;
-  max-width: 450px;
+  width: 450px;
   flex: 1 1 350px;
   padding: 2rem;
   border-radius: 8px;
@@ -30,6 +30,7 @@ mat-card-title {
   border: 1px solid #e0d8c8;
   font-family: "Cormorant Garamond", serif;
   color: #4a403a;
+  height: 100%;
 }
 
 .card-vintage {
@@ -62,19 +63,36 @@ mat-card-title {
 }
 
 .btn-vintage {
-  background-color: #5a7d7c;
-  color: white;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .btn-vintage:hover {
-  background-color: #4a6766;
+  background-color: #005cbb;
+}
+
+.btn-cancel-vintage:hover {
+  background-color: #ba1319;
 }
 
 .btn-cancel-vintage {
-  color: #8c7d71;
-  border-color: #e0d8c8;
+  font-weight: bold;
+  background-color: #bd282d;
+  color: #ffffff !important;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease, color 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18), 0 7px 14px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cancel-vintage:hover,
+.btn-vintage:hover {
+  color: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 15px 30px rgba(0, 0, 0, 0.2),
+    0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .list-vintage {
@@ -98,7 +116,7 @@ mat-card-title {
 }
 
 .item-vintage:hover {
-  transform: translateY(-2px);
+  transform: translateY(-6px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -152,12 +170,20 @@ mat-card-title {
   font-weight: normal;
 }
 
+.btn-edit-vintage {
+  color: #1c4d8d !important;
+}
+
 .btn-edit-vintage:hover {
-  color: #5a7d7c;
+  color: #072951 !important;
+}
+
+.btn-delete-vintage {
+  color: #bd282d !important;
 }
 
 .btn-delete-vintage:hover {
-  color: #c75646;
+  color: #ba1319 !important;
 }
 
 .empty-state {
@@ -182,6 +208,13 @@ mat-card-title {
   font-size: 1.2em;
   color: #4a403a;
   margin: 0;
+}
+
+.checkbox-vintage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
