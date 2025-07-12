@@ -1,1 +1,139 @@
 @use "../vintage-theme";
+
+.list-vintage {
+  padding-top: 0.3rem;
+  margin: 0;
+  overflow-y: auto !important;
+  max-height: 410px;
+}
+
+.item-vintage {
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0d8c8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer !important;
+}
+
+.item-vintage:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.264);
+}
+
+.item-vintage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  display: block;
+  opacity: 1 !important;
+  transition: background-color 0.3s ease;
+}
+
+.item-vintage.priority-1::before {
+  background-color: #c75646;
+}
+
+.item-vintage.priority-1:hover::before {
+  background-color: #cd2913;
+}
+
+.item-vintage.priority-2::before {
+  background-color: #e09d3b;
+}
+
+.item-vintage.priority-2:hover::before {
+  background-color: #ff9900;
+}
+
+.item-vintage.priority-3::before {
+  background-color: #7ca58a;
+}
+
+.item-vintage.priority-3:hover::before {
+  background-color: #15b349;
+}
+
+.checkbox-vintage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.task-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.task-desc {
+  color: #8c7d71;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-edit-vintage {
+  color: #1c4d8d !important;
+}
+
+.btn-edit-vintage:hover {
+  color: #072951 !important;
+}
+
+.btn-delete-vintage {
+  color: #bd282d !important;
+}
+
+.btn-delete-vintage:hover {
+  color: #ba1319 !important;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #8c7d71;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.empty-state-text {
+  font-size: 1.2em;
+  color: #4a403a;
+  margin: 0;
+}
+
+.task-name {
+  font-weight: 500;
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-name.completed {
+  text-decoration: line-through;
+  color: #66503f;
+  font-weight: normal;
+}
