@@ -8,6 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { Task } from '../../../models/task.model';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { TaskDetailsDialogComponent } from '../task-details-dialog/task-details-dialog.component';
 import { TaskService } from '../../../services/task.service';
 
 @Component({
@@ -20,6 +22,7 @@ import { TaskService } from '../../../services/task.service';
     MatIconModule,
     MatCheckboxModule,
     MatButtonModule,
+    MatDialogModule,
   ],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.scss',
@@ -28,7 +31,7 @@ export class TaskListComponent implements OnInit, OnDestroy {
   tasks: Task[] = [];
   private taskUpdateSubscription!: Subscription;
 
-  constructor(private taskService: TaskService) {}
+  constructor(private taskService: TaskService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.loadTasks();
@@ -64,5 +67,12 @@ export class TaskListComponent implements OnInit, OnDestroy {
     document
       .querySelector('.card-vintage')
       ?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  openTaskDetails(task: Task): void {
+    this.dialog.open(TaskDetailsDialogComponent, {
+      data: task,
+      width: '600px',
+    });
   }
 }

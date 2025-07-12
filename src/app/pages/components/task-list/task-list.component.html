@@ -5,11 +5,13 @@
         *ngFor="let task of tasks"
         class="item-vintage"
         [ngClass]="'priority-' + task.prioridade"
+        (click)="openTaskDetails(task)"
       >
         <mat-checkbox
           matListItemIcon
           [checked]="task.realizado"
           (change)="toggleTaskStatus(task)"
+          (click)="$event.stopPropagation()"
           class="checkbox-vintage"
           [attr.aria-label]="
             (task.realizado
@@ -28,7 +30,7 @@
         <button
           mat-icon-button
           matListItemMeta
-          (click)="editTask(task)"
+          (click)="editTask(task); $event.stopPropagation()"
           class="btn-edit-vintage"
           [attr.aria-label]="'Editar tarefa: ' + task.nome"
         >
@@ -39,7 +41,7 @@
           mat-icon-button
           matListItemMeta
           color="warn"
-          (click)="deleteTask(task.id)"
+          (click)="deleteTask(task.id); $event.stopPropagation()"
           class="btn-delete-vintage"
           [attr.aria-label]="'Remover tarefa: ' + task.nome"
         >

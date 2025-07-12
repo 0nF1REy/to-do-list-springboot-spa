@@ -96,7 +96,7 @@ mat-card-title {
 }
 
 .list-vintage {
-  padding: 0;
+  padding-top: .3rem;
   margin: 0;
   overflow-y: auto !important;
   max-height: 410px;
@@ -108,18 +108,17 @@ mat-card-title {
   margin-bottom: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   border: 1px solid #e0d8c8;
-  padding: 12px 16px;
   position: relative;
   display: flex;
   align-items: center;
-  gap: 12px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer !important;
 }
 
 .item-vintage:hover {
   transform: translateY(-6px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.264);
 }
 
 .item-vintage::before {
@@ -129,18 +128,33 @@ mat-card-title {
   top: 0;
   bottom: 0;
   width: 6px;
+  display: block;
+  opacity: 1 !important;
+  transition: background-color 0.3s ease;
 }
 
 .item-vintage.priority-1::before {
   background-color: #c75646;
 }
 
+.item-vintage.priority-1:hover::before {
+  background-color: #cd2913;
+}
+
 .item-vintage.priority-2::before {
   background-color: #e09d3b;
 }
 
+.item-vintage.priority-2:hover::before {
+  background-color: #ff9900;
+}
+
 .item-vintage.priority-3::before {
   background-color: #7ca58a;
+}
+
+.item-vintage.priority-3:hover::before {
+  background-color: #15b349;
 }
 
 .task-details {
@@ -151,7 +165,7 @@ mat-card-title {
 }
 
 .task-name {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.1em;
   white-space: nowrap;
   overflow: hidden;
