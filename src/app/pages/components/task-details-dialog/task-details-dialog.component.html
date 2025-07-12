@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card class="card-container-vintage">
   <mat-card-header>
     <mat-card-title>{{ task.nome }}</mat-card-title>
   </mat-card-header>
@@ -7,6 +7,8 @@
     <strong>Descrição: </strong>{{ task.descricao }}
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button mat-dialog-close>Fechar</button>
+    <button class="btn-close-vintage" mat-button mat-dialog-close>
+      Fechar
+    </button>
   </mat-card-actions>
 </mat-card>

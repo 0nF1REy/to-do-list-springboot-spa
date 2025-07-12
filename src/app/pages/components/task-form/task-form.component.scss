@@ -40,14 +40,6 @@ mat-card-title {
     box-shadow 0.3s ease, color 0.3s ease;
 }
 
-.btn-vintage:hover {
-  background-color: #005cbb;
-}
-
-.btn-cancel-vintage:hover {
-  background-color: #ba1319;
-}
-
 .btn-cancel-vintage {
   font-weight: bold;
   background-color: #bd282d;
@@ -57,6 +49,14 @@ mat-card-title {
     box-shadow 0.3s ease, color 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18), 0 7px 14px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-vintage:hover {
+  background-color: #005cbb;
+}
+
+.btn-cancel-vintage:hover {
+  background-color: #ba1319;
 }
 
 .btn-cancel-vintage:hover,
