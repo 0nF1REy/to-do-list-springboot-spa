@@ -1,59 +1,148 @@
-# ToDoListSpringbootSpa
+<h1 align="center">
+  To Do List - Spring Boot SPA
+</h1>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+<div align="center">
 
-## Development server
+![Maintenance](https://img.shields.io/maintenance/yes/2025?style=for-the-badge)
+![License MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-Conclu%C3%ADdo-brightgreen?style=for-the-badge)
 
-To start a local development server, run:
+<br />
 
-```bash
-ng serve
-```
+![Angular 19 ou superior](https://img.shields.io/badge/Angular-19%2B-red.svg?style=for-the-badge&logo=angular)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+</div>
 
-## Code scaffolding
+## 🧭 Guia de Navegação (Índice)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📖 Descrição <a name="descricao"></a>
 
-```bash
-ng generate component component-name
-```
+## 🎯 Objetivos <a name="objetivos"></a>
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ✨ Funcionalidades e Práticas Adotadas <a name="funcionalidades"></a>
 
-```bash
-ng generate --help
-```
+## 💻 Tecnologias Utilizadas <a name="tecnologias"></a>
 
-## Building
+## 🚀 Começando
 
-To build the project run:
+Para executar este projeto, você precisará ter as seguintes ferramentas instalados em sua máquina:
 
-```bash
-ng build
-```
+<div align="center">
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🔧 Pré-requisitos <a name="requisitos"></a>
 
-## Running unit tests
+<a href="https://git-scm.com/" target="_blank">
+  <img src="./readme_images/git-logo.png" width="200" alt="Git Logo" />
+</a>
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+</div>
 
-```bash
-ng test
-```
+<br />
 
-## Running end-to-end tests
+- **Git:** Para controle de versão e clonar o repositório. [https://git-scm.com/](https://git-scm.com/)
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## ⚙️ Como Executar o Projeto <a name="execucao"></a>
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Para rodar a aplicação localmente, siga os passos abaixo:
 
-## Additional Resources
+1.  **Clone o repositório:**
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    git clone https://github.com/0nF1REy/to-do-list-springboot-spa
+    cd to-do-list-springboot-spa
+    ```
+
+2.  **Iniciar um servidor de desenvolvimento local:**
+
+    ```bash
+    ng serve
+    ```
+
+## ✅ Acesso à Aplicação <a name="acesso"></a>
+
+-  Acesse em: **`http://localhost:4200`**
+
+---
+
+## 📁 Estrutura do Projeto <a name="estrutura"></a>
+
+O projeto segue a estrutura xxx e adota uma xxx em xxx para ...
+
+## 👤 Sobre o Desenvolvedor <a name="desenvolvedor"></a>
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/0nF1REy" target="_blank">
+        <img src="./readme_images/alan-ryan.jpg" height="160px" style="border-radius: 50%; border: 3px solid #0077B5;" alt="Foto de Alan Ryan"/><br>
+        <b>Alan Ryan</b>
+      </a>
+      <p>
+        ☕ Peopleware | Tech Enthusiast | Code Slinger ☕<br>
+        Apaixonado por código limpo, arquitetura escalável e experiências digitais envolventes.
+      </p>
+      <p style="font-weight: bold; color: #0077B5;">
+        Conecte-se comigo:
+      </p>
+      <p>
+        <a href="https://github.com/0nF1REy" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-0nF1REy-181717?style=flat&logo=github" alt="GitHub">
+        </a>
+        <a href="https://gitlab.com/alanryan619" target="_blank">
+          <img src="https://img.shields.io/badge/GitLab-@0nF1REy-FCA121?style=flat&logo=gitlab" alt="GitLab">
+        </a>
+        <a href="https://www.linkedin.com/in/alan-ryan-b115ba228" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-Alan_Ryan-0077B5?style=flat&logo=linkedin" alt="LinkedIn">
+        </a>
+        <a href="mailto:alanryan619@gmail.com" target="_blank">
+          <img src="https://img.shields.io/badge/Email-alanryan619@gmail.com-D14836?style=flat&logo=gmail" alt="Email">
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+## 📫 Contribuir <a name="contribuicao"></a>
+
+Contribuições são muito bem-vindas! Se você deseja contribuir com o projeto, por favor, siga estes passos:
+
+1.  **Faça um Fork** do repositório.
+
+2.  **Crie uma nova Branch** para sua feature ou correção:
+
+    ```bash
+    git checkout -b feature/nome-da-feature
+    ```
+
+3.  **Faça suas alterações** e realize o commit:
+
+    ```bash
+    git commit -m "feat: Adiciona nova feature"
+    ```
+
+4.  **Envie suas alterações** para o seu fork:
+
+    ```bash
+    git push origin feature/nome-da-feature
+    ```
+
+5.  **Abra um pull request** para a branch `main` do repositório original.
+
+### Recursos Úteis
+
+- **<a href="https://www.atlassian.com/br/git/tutorials/making-a-pull-request" target="_blank">📝 Como criar um Pull Request</a>**
+
+- **<a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">💾 Padrão de Commits Convencionais</a>**
+
+## 📜 Licença <a name="licenca"></a>
+
+Este projeto está sob a **licença MIT**. Consulte o arquivo **[LICENSE](LICENSE)** para obter mais detalhes.
+
+> ℹ️ **Aviso de Licença:** © 2025 Alan Ryan da Silva Domingues. Este projeto está licenciado sob os termos da licença MIT. Isso significa que você pode usá-lo, copiá-lo, modificá-lo e distribuí-lo com liberdade, desde que mantenha os avisos de copyright.
