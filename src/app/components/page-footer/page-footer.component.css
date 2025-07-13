@@ -1,0 +1,23 @@
+.footer-vintage {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: var(--color-text);
+  opacity: 0;
+  animation: slideUpFooter 0.8s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes slideUpFooter {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
