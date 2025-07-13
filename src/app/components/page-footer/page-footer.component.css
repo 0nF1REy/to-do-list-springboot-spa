@@ -1,9 +1,10 @@
 .footer-vintage {
+  font-family: "Courier New", Courier, monospace;
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: 10px 0;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: var(--color-text);
 }
