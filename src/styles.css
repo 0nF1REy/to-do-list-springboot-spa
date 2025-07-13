@@ -64,3 +64,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-scrollbar-thumb-hover);
 }
+
+.success-snackbar {
+  --mdc-snackbar-container-color: var(--color-background-start);
+  --mdc-snackbar-supporting-text-color: var(--color-text);
+}
+
+.brown-snackbar-button .mat-mdc-button.mat-mdc-snack-bar-action {
+  color: #bd282d !important;
+  font-weight: bold !important;
+}

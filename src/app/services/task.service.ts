@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, Subject, tap } from 'rxjs';
 import { Task } from '../models/task.model';
+import { NotificationService } from './notification.service';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +16,10 @@ export class TaskService {
   private taskListUpdatedSource = new Subject<void>();
   taskListUpdated$ = this.taskListUpdatedSource.asObservable();
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private notificationService: NotificationService
+  ) {}
 
   selectTaskForEdit(task: Task): void {
     this.taskToEditSource.next(task);
@@ -27,20 +31,29 @@ export class TaskService {
 
   createTask(task: Omit<Task, 'id' | 'realizado'>): Observable<Task[]> {
     const newTask = { ...task, realizado: false };
-    return this.http
-      .post<Task[]>(this.apiUrl, newTask)
-      .pipe(tap(() => this.taskListUpdatedSource.next()));
+    return this.http.post<Task[]>(this.apiUrl, newTask).pipe(
+      tap(() => {
+        this.taskListUpdatedSource.next();
+        this.notificationService.showSuccess('Tarefa criada com sucesso!');
+      })
+    );
   }
 
   updateTask(task: Task): Observable<Task[]> {
-    return this.http
-      .put<Task[]>(this.apiUrl, task)
-      .pipe(tap(() => this.taskListUpdatedSource.next()));
+    return this.http.put<Task[]>(this.apiUrl, task).pipe(
+      tap(() => {
+        this.taskListUpdatedSource.next();
+        this.notificationService.showSuccess('Tarefa atualizada com sucesso!');
+      })
+    );
   }
 
   deleteTask(id: number): Observable<Task[]> {
-    return this.http
-      .delete<Task[]>(`${this.apiUrl}/${id}`)
-      .pipe(tap(() => this.taskListUpdatedSource.next()));
+    return this.http.delete<Task[]>(`${this.apiUrl}/${id}`).pipe(
+      tap(() => {
+        this.taskListUpdatedSource.next();
+        this.notificationService.showSuccess('Tarefa excluída com sucesso!');
+      })
+    );
   }
 }
