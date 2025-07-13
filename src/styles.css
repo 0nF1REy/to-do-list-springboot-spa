@@ -66,11 +66,25 @@ body {
 }
 
 .success-snackbar {
-  --mdc-snackbar-container-color: var(--color-background-start);
-  --mdc-snackbar-supporting-text-color: var(--color-text);
+  --mdc-snackbar-container-color: transparent;
+  --mdc-snackbar-supporting-text-color: #ffffff;
+
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, var(--color-text), #3a322d, #2b2522);
+  background-size: 200% 200%;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .brown-snackbar-button .mat-mdc-button.mat-mdc-snack-bar-action {
-  color: #bd282d !important;
+  color: #ffffff !important;
   font-weight: bold !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.success-snackbar .mdc-snackbar__surface {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
 }
