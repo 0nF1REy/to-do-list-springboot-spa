@@ -27,16 +27,16 @@ import { TaskFormComponent } from '../components/task-form/task-form.component';
         ),
         query(
           '.vintage-title, .vintage-grid > section',
-          stagger('300ms', [
+          stagger('400ms', [
             animate(
-              '0.7s ease-out',
+              '1s ease-out',
               style({ opacity: 1, transform: 'translateY(0)' })
             ),
           ]),
           { optional: true }
         ),
       ]),
-      transition(':leave', [animate('0.4s ease-in', style({ opacity: 0 }))]),
+      transition(':leave', [animate('0.6s ease-in', style({ opacity: 0 }))]),
     ]),
   ],
   host: {

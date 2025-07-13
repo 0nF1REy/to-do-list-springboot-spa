@@ -25,16 +25,16 @@ import { RouterLink } from '@angular/router';
         ),
         query(
           'h1, h2, p, a',
-          stagger('150ms', [
+          stagger('200ms', [
             animate(
-              '0.6s ease-out',
+              '0.9s ease-out',
               style({ opacity: 1, transform: 'translateY(0)' })
             ),
           ]),
           { optional: true }
         ),
       ]),
-      transition(':leave', [animate('400ms ease-in', style({ opacity: 0 }))]),
+      transition(':leave', [animate('0.6s ease-in', style({ opacity: 0 }))]),
     ]),
   ],
 })
