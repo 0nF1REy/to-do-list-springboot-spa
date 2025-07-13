@@ -4,9 +4,6 @@
   color: var(--color-text);
   margin: 2rem auto;
   font-size: 2.5em;
-  opacity: 0;
-  animation: fadeInUp 0.7s ease-out forwards;
-  animation-delay: 0.2s;
 }
 
 .vintage-title mat-icon {
@@ -18,30 +15,6 @@
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.vintage-grid > section {
-  opacity: 0;
-  animation: fadeInUp 0.7s ease-out forwards;
-}
-
-.vintage-grid > section:nth-child(1) {
-  animation-delay: 0.5s;
-}
-
-.vintage-grid > section:nth-child(2) {
-  animation-delay: 0.8s;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 768px) {
