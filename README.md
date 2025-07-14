@@ -18,6 +18,14 @@
 
 ## 📖 Descrição <a name="descricao"></a>
 
+Este repositório contém a interface de usuário (UI) de uma **Lista de Tarefas (To Do List)**, desenvolvida como uma **Single Page Application (SPA)** utilizando **Angular**. A aplicação oferece uma experiência de usuário moderna e reativa, permitindo a criação, listagem, edição e remoção de tarefas de forma intuitiva e eficiente.
+
+O frontend comunica-se com uma **API REST** (implementada com Java e Spring Boot) para manipulação e persistência dos dados em um banco de dados **MariaDB**. Esta SPA foi construída seguindo as melhores práticas do Angular, com foco em componentização, gerenciamento de estado e consumo de serviços HTTP.
+
+A aplicação pode ser executada de forma independente em modo de desenvolvimento (**```ng s```**), ideal para evoluir e testar a interface de usuário. Além disso, ela também pode ser integrada a um ambiente completo e totalmente containerizado, que inclui backend e banco de dados, facilitando a configuração e execução do sistema como um todo.
+
+Este projeto demonstra como criar uma experiência de usuário fluida com Angular, integrando-se de forma elegante a um backend RESTful.
+
 ## 🎯 Objetivos <a name="objetivos"></a>
 
 ## ✨ Funcionalidades e Práticas Adotadas <a name="funcionalidades"></a>
