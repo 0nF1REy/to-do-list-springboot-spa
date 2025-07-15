@@ -50,6 +50,26 @@ Este projeto demonstra como criar uma experiência de usuário fluida com Angula
 
 ## ✨ Funcionalidades e Práticas Adotadas <a name="funcionalidades"></a>
 
+- **Interface Moderna e Reativa:** Desenvolvida como uma Single Page Application (SPA) com **Angular**, proporcionando uma experiência fluida e sem recarregamentos de página.
+
+- **Operações CRUD completas:** Funcionalidades intuitivas para criar, listar, atualizar e excluir tarefas.
+
+- **Arquitetura baseada em Componentes:** Estrutura modular e reutilizável, facilitando a manutenção e escalabilidade do código.
+
+- **Comunicação com API RESTful:** Integração com um backend via `HttpClient` para consumir e manipular dados.
+
+- **Componentes Visuais Consistentes:** Utilização do **Angular Material** para criar uma interface consistente, acessível e visualmente agradável.
+
+- **Gerenciamento de Estado Reativo:** Uso de **RxJS** (`Observable` e `Subject`) para garantir que a interface sempre reflita os dados mais recentes.
+
+- **Formulários Reativos:** Implementação com **Reactive Forms**, para validação e manipulação robusta dos dados de entrada.
+
+- **Notificações de Feedback:** Sistema de mensagens para informar o usuário sobre o sucesso das operações realizadas.
+
+- **Injeção de Dependências:** Código desacoplado e organizado com serviços como `TaskService` e `NotificationService`.
+
+- **Testes Unitários:** Estrutura configurada para testes com **Jasmine** e **Karma**, garantindo a qualidade e manutenibilidade do código.
+
 ## 💻 Tecnologias Utilizadas <a name="tecnologias"></a>
 
 ## 🚀 Começando
