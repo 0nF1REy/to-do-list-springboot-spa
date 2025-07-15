@@ -72,6 +72,18 @@ Este projeto demonstra como criar uma experiência de usuário fluida com Angula
 
 ## 💻 Tecnologias Utilizadas <a name="tecnologias"></a>
 
+| Tecnologia       | Descrição                                                                                               |
+| ---------------- | ------------------------------------------------------------------------------------------------------- |
+| Angular 19+      | _Framework para construção da Single Page Application (SPA)_                                            |
+| TypeScript       | _Linguagem principal, adiciona tipagem estática ao JavaScript_                                          |
+| HTML5            | _Linguagem de marcação para a estrutura da interface_                                                   |
+| CSS & SCSS       | _Linguagens para estilização, com SCSS como pré-processador para estilos mais organizados e poderosos._ |
+| Angular Material | _Biblioteca de componentes para interface moderna e consistente_                                        |
+| RxJS             | _Biblioteca para programação reativa e gerenciamento de estado_                                         |
+| Angular CLI      | _Ferramenta para scaffolding e manutenção de projetos Angular_                                          |
+| Jasmine & Karma  | _Frameworks para testes unitários, garantindo qualidade_                                                |
+| Node.js & npm    | _Ambiente de execução e gerenciador de pacotes para frontend_                                           |
+
 ## 🚀 Começando
 
 Para executar este projeto, você precisará ter as seguintes ferramentas instalados em sua máquina:
