@@ -22,11 +22,31 @@ Este repositório contém a interface de usuário (UI) de uma **Lista de Tarefas
 
 O frontend comunica-se com uma **API REST** (implementada com Java e Spring Boot) para manipulação e persistência dos dados em um banco de dados **MariaDB**. Esta SPA foi construída seguindo as melhores práticas do Angular, com foco em componentização, gerenciamento de estado e consumo de serviços HTTP.
 
-A aplicação pode ser executada de forma independente em modo de desenvolvimento (**```ng s```**), ideal para evoluir e testar a interface de usuário. Além disso, ela também pode ser integrada a um ambiente completo e totalmente containerizado, que inclui backend e banco de dados, facilitando a configuração e execução do sistema como um todo.
+A aplicação pode ser executada de forma independente em modo de desenvolvimento (**`ng s`**), ideal para evoluir e testar a interface de usuário. Além disso, ela também pode ser integrada a um ambiente completo e totalmente containerizado, que inclui backend e banco de dados, facilitando a configuração e execução do sistema como um todo.
 
 Este projeto demonstra como criar uma experiência de usuário fluida com Angular, integrando-se de forma elegante a um backend RESTful.
 
 ## 🎯 Objetivos <a name="objetivos"></a>
+
+- ✅ Fornecer um exemplo **prático, claro e bem-estruturado** de como construir uma **Single Page Application (SPA)** com **Angular 19+**, consumindo uma API RESTful.
+
+- ✅ Demonstrar **boas práticas de desenvolvimento frontend**, como:
+
+  - 📦 Componentização e arquitetura baseada em componentes.
+
+  - 🔄 Gerenciamento de estado reativo.
+
+  - 🧩 Injeção de dependências e serviços.
+
+  - 🌐 Comunicação com APIs via HttpClient.
+
+  - ✨ Criação de interfaces de usuário modernas, dinâmicas e reativas.
+
+- ✅ Mostrar como o frontend pode ser integrado a um ecossistema completo e **containerizado com Docker**, incluindo backend (Spring Boot) e banco de dados (MariaDB), facilitando a configuração e execução do sistema como um todo.
+
+- ✅ Servir como um **recurso de aprendizado acessível e progressivo**, ajudando iniciantes e desenvolvedores experientes a compreender conceitos essenciais do Angular e de desenvolvimento web moderno.
+
+- ✅ Incentivar a **colaboração da comunidade open source**, estimulando a abertura de issues, pull requests e sugestões de melhorias.
 
 ## ✨ Funcionalidades e Práticas Adotadas <a name="funcionalidades"></a>
 
@@ -71,7 +91,7 @@ Para rodar a aplicação localmente, siga os passos abaixo:
 
 ## ✅ Acesso à Aplicação <a name="acesso"></a>
 
--  Acesse em: **`http://localhost:4200`**
+- Acesse em: **`http://localhost:4200`**
 
 ---
 
