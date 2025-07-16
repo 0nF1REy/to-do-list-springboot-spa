@@ -95,12 +95,31 @@ Para executar este projeto, você precisará ter as seguintes ferramentas instal
 <a href="https://git-scm.com/" target="_blank">
   <img src="./readme_images/git-logo.png" width="200" alt="Git Logo" />
 </a>
+<a href="https://nodejs.org/" target="_blank">
+  <img src="./readme_images/node-js-logo.png" width="200" alt="Node Logo" />
+</a>
+<a href="https://www.npmjs.com/" target="_blank">
+  <img src="./readme_images/npm-logo.svg" width="200" alt="Npm Logo" />
+</a>
+<a href="https://angular.dev/" target="_blank">
+  <img src="./readme_images/angular-logo.svg" width="200" alt="Angular Logo" />
+</a>
 
 </div>
 
 <br />
 
 - **Git:** Para controle de versão e clonar o repositório. [https://git-scm.com/](https://git-scm.com/)
+
+- **Node.js e npm:** Ambiente de execução e gerenciador de pacotes para o frontend. É recomendado usar a versão LTS mais recente do Node.js. [https://nodejs.org/](https://nodejs.org/)
+
+- **Angular CLI (v19+):** Ferramenta de linha de comando para gerenciar e executar a aplicação. [https://angular.dev/](https://angular.dev/)
+
+Após instalar o Node.js, instale o Angular CLI globalmente com o comando:
+
+```bash
+npm install -g @angular/cli@19
+```
 
 ---
 
@@ -118,7 +137,7 @@ Para rodar a aplicação localmente, siga os passos abaixo:
 2.  **Iniciar um servidor de desenvolvimento local:**
 
     ```bash
-    ng serve
+    ng s
     ```
 
 ## ✅ Acesso à Aplicação <a name="acesso"></a>
