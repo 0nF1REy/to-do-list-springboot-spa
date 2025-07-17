@@ -16,6 +16,19 @@
 
 ## 🧭 Guia de Navegação (Índice)
 
+- **[📖 Descrição](#descricao)**
+- **[🎯 Objetivos](#objetivos)**
+- **[📸 Ilustração](#ilustracao)**
+- **[✨ Funcionalidades e Práticas Adotadas](#funcionalidades)**
+- **[💻 Tecnologias Utilizadas](#tecnologias)**
+- **[🔧 Pré-requisitos](#requisitos)**
+- **[⚙️ Execução](#execucao)**
+- **[🌐 Acesso](#acesso)**
+- **[📁 Estrutura](#estrutura)**
+- **[👤 Desenvolvedor](#desenvolvedor)**
+- **[📫 Contribuir](#contribuicao)**
+- **[📜 Licença](#licenca)**
+
 ## 📖 Descrição <a name="descricao"></a>
 
 Este repositório contém a interface de usuário (UI) de uma **Lista de Tarefas (To Do List)**, desenvolvida como uma **Single Page Application (SPA)** utilizando **Angular**. A aplicação oferece uma experiência de usuário moderna e reativa, permitindo a criação, listagem, edição e remoção de tarefas de forma intuitiva e eficiente.
@@ -47,6 +60,18 @@ Este projeto demonstra como criar uma experiência de usuário fluida com Angula
 - ✅ Servir como um **recurso de aprendizado acessível e progressivo**, ajudando iniciantes e desenvolvedores experientes a compreender conceitos essenciais do Angular e de desenvolvimento web moderno.
 
 - ✅ Incentivar a **colaboração da comunidade open source**, estimulando a abertura de issues, pull requests e sugestões de melhorias.
+
+## 📸 Ilustração <a name="ilustracao"></a>
+
+- ### _Página inicial:_
+
+![Print da página inicial](./readme_images/01-home.png)
+
+- ### _Página não encontrada:_
+
+![Print da página não encontrada](./readme_images/02-not-found.png)
+
+---
 
 ## ✨ Funcionalidades e Práticas Adotadas <a name="funcionalidades"></a>
 
@@ -109,13 +134,13 @@ Para executar este projeto, você precisará ter as seguintes ferramentas instal
 
 <br />
 
-- **Git:** Para controle de versão e clonar o repositório. [https://git-scm.com/](https://git-scm.com/)
+- **Git -** Para controle de versão e clonar o repositório. [https://git-scm.com/](https://git-scm.com/)
 
-- **Node.js e npm:** Ambiente de execução e gerenciador de pacotes para o frontend. É recomendado usar a versão LTS mais recente do Node.js. [https://nodejs.org/](https://nodejs.org/)
+- **Node.js e npm -** Ambiente de execução e gerenciador de pacotes para o frontend. É recomendado usar a versão LTS mais recente do Node.js. [https://nodejs.org/](https://nodejs.org/)
 
-- **Angular CLI (v19+):** Ferramenta de linha de comando para gerenciar e executar a aplicação. [https://angular.dev/](https://angular.dev/)
+- **Angular CLI -** Ferramenta de linha de comando para gerenciar e executar a aplicação. [https://angular.dev/](https://angular.dev/)
 
-Após instalar o Node.js, instale o Angular CLI globalmente com o comando:
+Após instalar o Node.js, instale o Angular CLI +19 globalmente com o comando:
 
 ```bash
 npm install -g @angular/cli@19
@@ -140,7 +165,7 @@ Para rodar a aplicação localmente, siga os passos abaixo:
     ng s
     ```
 
-## ✅ Acesso à Aplicação <a name="acesso"></a>
+## 🌐 Acesso à Aplicação <a name="acesso"></a>
 
 - Acesse em: **`http://localhost:4200`**
 
@@ -148,7 +173,28 @@ Para rodar a aplicação localmente, siga os passos abaixo:
 
 ## 📁 Estrutura do Projeto <a name="estrutura"></a>
 
-O projeto segue a estrutura xxx e adota uma xxx em xxx para ...
+O projeto foi desenvolvido com base na estrutura padrão disponibilizada pelo **Angular CLI**, adotando uma **arquitetura** baseada em **componentes**, orientada por princípios de **modularidade** e **escalabilidade**. Essa abordagem resulta em um código limpo, bem organizado e flexível, facilitando sua evolução contínua e promovendo a colaboração eficiente entre os desenvolvedores.
+
+```
+to-do-list-springboot-spa/
+├── angular.json                # Configuração do projeto Angular
+├── package.json                # Dependências e scripts (npm)
+├── README.md                   # Documentação
+├── tsconfig.json               # Configuração do TypeScript
+└── src/                        # Código-fonte da aplicação
+    ├── app/                    # Lógica da aplicação
+    │   ├── components/         # Componentes reutilizáveis (ex: rodapé)
+    │   ├── models/             # Interfaces e modelos de dados (ex: Tarefa)
+    │   ├── pages/              # Páginas completas (ex: Home, Not Found)
+    │   ├── services/           # Lógica de negócios e comunicação com API
+    │   ├── app.component.ts    # Componente principal
+    │   └── app.routes.ts       # Rotas de navegação
+    ├── styles/                 # Estilos globais (SCSS)
+    ├── index.html              # Ponto de entrada HTML
+    └── main.ts                 # Arquivo de inicialização da aplicação
+```
+
+---
 
 ## 👤 Sobre o Desenvolvedor <a name="desenvolvedor"></a>
 
