@@ -71,8 +71,6 @@ Este projeto demonstra como criar uma experiência de usuário fluida com Angula
 
 ![Print da página não encontrada](./readme_images/02-not-found.png)
 
----
-
 ## ✨ Funcionalidades e Práticas Adotadas <a name="funcionalidades"></a>
 
 - **Interface Moderna e Reativa:** Desenvolvida como uma Single Page Application (SPA) com **Angular**, proporcionando uma experiência fluida e sem recarregamentos de página.
@@ -146,8 +144,6 @@ Após instalar o Node.js, instale o Angular CLI +19 globalmente com o comando:
 npm install -g @angular/cli@19
 ```
 
----
-
 ## ⚙️ Como Executar o Projeto <a name="execucao"></a>
 
 Para rodar a aplicação localmente, siga os passos abaixo:
@@ -198,34 +194,36 @@ to-do-list-springboot-spa/
 
 ## 👤 Sobre o Desenvolvedor <a name="desenvolvedor"></a>
 
+<div align="center">
+
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/0nF1REy" target="_blank">
-        <img src="./readme_images/alan-ryan.jpg" height="160px" style="border-radius: 50%; border: 3px solid #0077B5;" alt="Foto de Alan Ryan"/><br>
-        <b>Alan Ryan</b>
-      </a>
-      <p>
-        ☕ Peopleware | Tech Enthusiast | Code Slinger ☕<br>
-        Apaixonado por código limpo, arquitetura escalável e experiências digitais envolventes.
-      </p>
-      <p style="font-weight: bold; color: #0077B5;">
-        Conecte-se comigo:
-      </p>
-      <p>
+        <br>
         <a href="https://github.com/0nF1REy" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-0nF1REy-181717?style=flat&logo=github" alt="GitHub">
+          <img src="./readme_images/alan-ryan.jpg" height="160" alt="Foto de Alan Ryan" style="border-radius:50%;border:3px solid #0077B5;">
+        </a>
+        </p>
+        <a href="https://github.com/0nF1REy" target="_blank">
+          <strong>Alan Ryan</strong>
+        </a>
+        </p>
+        ☕ Peopleware | Tech Enthusiast | Code Slinger ☕
+        <br>
+        Apaixonado por código limpo, arquitetura escalável e experiências digitais envolventes
+        </p>
+          Conecte-se comigo:
+        </p>
+        <a href="https://www.linkedin.com/in/alan-ryan-b115ba228" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-Alan_Ryan-0077B5?style=flat&logo=linkedin" alt="LinkedIn">
         </a>
         <a href="https://gitlab.com/alanryan619" target="_blank">
           <img src="https://img.shields.io/badge/GitLab-@0nF1REy-FCA121?style=flat&logo=gitlab" alt="GitLab">
         </a>
-        <a href="https://www.linkedin.com/in/alan-ryan-b115ba228" target="_blank">
-          <img src="https://img.shields.io/badge/LinkedIn-Alan_Ryan-0077B5?style=flat&logo=linkedin" alt="LinkedIn">
-        </a>
         <a href="mailto:alanryan619@gmail.com" target="_blank">
           <img src="https://img.shields.io/badge/Email-alanryan619@gmail.com-D14836?style=flat&logo=gmail" alt="Email">
         </a>
-      </p>
+        </p>
     </td>
   </tr>
 </table>
