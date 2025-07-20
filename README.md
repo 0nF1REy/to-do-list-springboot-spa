@@ -91,8 +91,6 @@ Este projeto demonstra como criar uma experiência de usuário fluida com Angula
 
 - **Injeção de Dependências:** Código desacoplado e organizado com serviços como `TaskService` e `NotificationService`.
 
-- **Testes Unitários:** Estrutura configurada para testes com **Jasmine** e **Karma**, garantindo a qualidade e manutenibilidade do código.
-
 ## 💻 Tecnologias Utilizadas <a name="tecnologias"></a>
 
 | Tecnologia       | Descrição                                                                                               |
@@ -104,7 +102,6 @@ Este projeto demonstra como criar uma experiência de usuário fluida com Angula
 | Angular Material | _Biblioteca de componentes para interface moderna e consistente_                                        |
 | RxJS             | _Biblioteca para programação reativa e gerenciamento de estado_                                         |
 | Angular CLI      | _Ferramenta para scaffolding e manutenção de projetos Angular_                                          |
-| Jasmine & Karma  | _Frameworks para testes unitários, garantindo qualidade_                                                |
 | Node.js & npm    | _Ambiente de execução e gerenciador de pacotes para frontend_                                           |
 
 ## 🚀 Começando
